@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guess The Build Roblox </title>
+</head>
+<body>
+  <h1>Guess the Build Solver</h1>
+  <p>Type your pattern (use <code>_</code> for unknown letters):</p>
+  
+  <input id="pattern" placeholder="_ A T E R">
+  <button onclick="solve()">Solve</button>
+  
+  <h2>Results:</h2>
+  <ul id="results"></ul>
+
+  <script src="wordlist.js"></script>
+  <script>
+    function solve() {
+      const input = document.getElementById("pattern").value;
+      const results = solvePuzzle(input, wordlist);
+      document.getElementById("results").innerHTML =
+        results.map(r => `<li>${r}</li>`).join("");
+    }
+  </script>
+</body>
+</html>
