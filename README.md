@@ -1,4 +1,4 @@
-Enter a pattern like `_ A T E R` and it shows all possible matching words.
+Enter a pattern like `W _ _ E R` and it shows all possible matching words.
 
 ## 🚀 How to Use
 1. Open `index.html` in your browser.
